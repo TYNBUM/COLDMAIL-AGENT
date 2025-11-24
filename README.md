@@ -47,7 +47,6 @@ node -e "import('./src/spiderAgent.mjs').then(async m => {
     enableSchoolCrawl: true,
     schoolSiteStartUrl: 'https://school.edu/faculty', // 学院入口
     profName: '张三',
-    proxyUrl: 'http://127.0.0.1:7890'
   });
   const structured = await m.normalizeWithLLM(info);
   console.log(JSON.stringify(structured, null, 2));
